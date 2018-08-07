@@ -1,22 +1,40 @@
 # Vending Machine Tracker
 
-We’re developing an application to track vending machines across the city.
+We're developing an application to track vending machines across the city. This will test your ability to set up and test many-to-many relationships and access attributes and methods through those relationships.
 
-Vending machines may be stocked with different snacks, and the same snack may be available at many different places throughout the city. Before you begin: what does that mean the relationship is between vending machines and snacks? How many snacks does a vending machine have? How many vending machines can a snack (or maybe a better way to think of it is a type of snack) be in?
+Vending machines may be stocked with different snacks, and the same snack may be available at many different places throughout the city. Before you begin: what does that mean the relationship is between vending machines and snacks? How many snacks does a vending machine have? How many vending machines can a snack be in?
 
-## Visiting a Vending Machine Page
+## Be sure to read all user stories BEFORE beginning your work
 
-### Stories
+## Setup
+
+- Perform the usual setup steps after cloning a Rails application
+
+## Requirements
+
+- TDD all new work; you may postpone model tests for attribute validations only
+
+## Not Required
+
+- No form input is required
+- No visual styling is required
+
+
+## User Stories
 
 ```
+User Story 1 of 3
+
 As a user
-When I visit a specific vending machine page
+When I visit a vending machine show page
 I see the name of all of the snacks associated with that vending machine along with their price
 ```
 
 ```
-As a user
-When I visit a specific vending machine page
+User Story 2 of 3
+
+As a visitor
+When I visit a vending machine show page
 I also see an average price for all of the snacks in that machine
 ```
 
@@ -34,13 +52,15 @@ Average Price: $2.50
 ### Story
 
 ```
-As a user
-When I visit a specific snack page
+User Story 3 of 3
+
+As a visitor
+When I visit a snack show page
 I see the name of that snack
-I see the price for that snack
-I see a list of locations with vending machines that carry that snack
-I see the average price for snacks in those vending machines
-And I see a count of the different kinds of items in that vending machine.
+  and I see the price for that snack
+  and I see a list of locations with vending machines that carry that snack
+  and I see the average price for snacks in those vending machines
+  and I see a count of the different kinds of items in that vending machine.
 ```
 
 ### Example
